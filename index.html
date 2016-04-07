@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600">
+
     <link rel="stylesheet" type="text/css" href="public/stylesheets/normalize.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/screen.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="public/stylesheets/read-more.css" media="screen" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -19,6 +22,78 @@
   </head>
 
   <body>
-    <p>Kickoff</p>
+    <!-- HEADER -->
+    <header class="header">
+      <section class="section">
+        <h1 class="logo">
+          <a href="http://www.primemodule.com" title="PrimeModule Website" class="logo__link-image">PrimeModule</a>
+        </h1>
+
+        <nav class="navigation">
+          <h2 class="navigation__title text-bright">Simple jQuery <span class="text-highlight">read-more</span> plugin</h2>
+          <ul class="list-inline navigation__menu">
+            <li class="list-inline__item navigation__menu__item">
+              <a href="#setup" class="common-link common-link--bright text-bright">Setup</a>
+            </li>
+            <li class="list-inline__item navigation__menu__item">
+              <a href="#demo" class="common-link common-link--bright text-bright">Demo</a>
+            </li>
+            <li class="list-inline__item navigation__menu__item">
+              <a href="#requirements" class="common-link common-link--bright text-bright">Requirements</a>
+            </li>
+            <li class="list-inline__item navigation__menu__item">
+              <a href="#download" class="common-link common-link--bright text-bright">Download</a>
+            </li>
+            <li class="list-inline__item navigation__menu__item">
+              <a href="#license" class="common-link common-link--bright text-bright">License</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <section id="setup" class="section">
+        <h3 class="section__title ">Setup</h3>
+        <p class="section__description">Minimum use of javascript and flat structure make it easy to setup.</p>
+        <div class="preview-box">
+          <h4 class="preview-box__title text-highlight">HTML</h3>
+          <pre class="preview-box__code">&lt;div class="read-more js-read-more"&gt;
+  &lt;a href="#" class="read-more__trigger js-read-more-trigger>Read more&lt;/a&gt;
+  &lt;div class="read-more__content js-read-more-content"&gt;
+    ...content...
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+        <div class="preview-box">
+          <h4 class="preview-box__title text-highlight">JavaScript</h3>
+          <pre class="preview-box__code">$(.js-read-more).readMore();</pre>
+        </div>
+      </section>
+
+      <section id="demo" class="section">
+
+      </section>
+
+      <section id="requirements" class="section">
+
+      </section>
+
+      <section id="download" class="section">
+
+      </section>
+
+      <section id="license" class="section">
+
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer text-center">
+      <section class="section">
+        <a href="http://www.primemodule.com" title="PrimeModule Website" class="common-link common-link--bright text-bright">Visit us on <span class="text-highlight">PrimeModule</span> website.</a>
+      </section>
+    </footer>
   </body>
 </html>
