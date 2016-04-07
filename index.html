@@ -42,7 +42,7 @@
               <a href="#requirements" class="common-link common-link--bright text-bright">Requirements</a>
             </li>
             <li class="list-inline__item navigation__menu__item">
-              <a href="#download" class="common-link common-link--bright text-bright">Download</a>
+              <a href="https://github.com/PrimeModule/read-more/archive/master.zip" class="common-link common-link--bright text-bright">Download</a>
             </li>
             <li class="list-inline__item navigation__menu__item">
               <a href="#license" class="common-link common-link--bright text-bright">License</a>
@@ -72,20 +72,49 @@
         </div>
       </section>
 
-      <section id="demo" class="section">
-
+      <section id="demo" class="section section--decorated">
+        <h3 class="section__title ">Demo</h3>
+        <p class="section__description">Simple example of read-more plugin usage. Click the trigger to toggle content.</p>
+        <!-- BEGIN READ-MORE HTML -->
+        <div class="read-more js-read-more">
+          <a href="#" class="read-more__trigger common-link text-highlight js-read-more-trigger">Read more</a>
+          <div class="read-more__content js-read-more-content">
+            Nulla convallis fringilla mi, eu pretium dui dapibus vel. Cras at odio nibh. Fusce eget metus justo. Pellentesque non quam massa. Cras placerat cursus accumsan. Maecenas hendrerit nibh enim, ac dapibus felis facilisis eu. Curabitur sollicitudin purus in ultrices rutrum. Donec non sem volutpat, eleifend lorem non, egestas ante. Proin varius lorem mauris, id aliquet velit eleifend at. Suspendisse quis mi id ante aliquam sodales id sed diam. Suspendisse suscipit dolor sed ipsum suscipit sodales. Pellentesque vitae odio dapibus, malesuada massa at, luctus risus. Suspendisse maximus sodales turpis vehicula pulvinar. Pellentesque pretium mollis magna, ut rhoncus leo hendrerit quis.
+          </div>
+        </div>
+        <!-- END READ-MORE HTML -->
       </section>
 
-      <section id="requirements" class="section">
-
+      <section id="requirements" class="section section--decorated">
+        <h3 class="section__title ">Requirements</h3>
+        <p class="section__description">Read-more plugin is written with jQuery use. Please download and attach jQuery library before using this plugin.<br /> Version 1.12 required or above. Visit jQuery official <a href="https://jquery.com/" target="_blank" class="common-link text-highlight">website</a>.</p>
       </section>
 
-      <section id="download" class="section">
-
-      </section>
-
-      <section id="license" class="section">
-
+      <section id="license" class="section section--decorated">
+        <h3 class="section__title ">License</h3>
+        <p class="section__description section__description--text-small">
+          The MIT License (MIT)
+          <br /><br />
+          Copyright (c) 2016 PrimeModule
+          <br /><br />
+          Permission is hereby granted, free of charge, to any person obtaining a copy
+          of this software and associated documentation files (the "Software"), to deal
+          in the Software without restriction, including without limitation the rights
+          to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+          copies of the Software, and to permit persons to whom the Software is
+          furnished to do so, subject to the following conditions:
+          <br /><br />
+          The above copyright notice and this permission notice shall be included in all
+          copies or substantial portions of the Software.
+          <br /><br />
+          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+          IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+          FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+          AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+          LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+          OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+          SOFTWARE.
+        </p>
       </section>
     </main>
 
@@ -95,5 +124,11 @@
         <a href="http://www.primemodule.com" title="PrimeModule Website" class="common-link common-link--bright text-bright">Visit us on <span class="text-highlight">PrimeModule</span> website.</a>
       </section>
     </footer>
+
+    <!-- START READ-MORE JS -->
+    <script type="text/javascript">
+      $('.js-read-more').readMore();
+    </script>
+    <!-- END READ-MORE JS -->
   </body>
 </html>
