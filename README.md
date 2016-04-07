@@ -1,6 +1,9 @@
 #Simple jQuery read-more plugin
 This plugin provides reveal/hide content with simple slide animation.
 
+## Demo
+See **[demo](http://http://primemodule.github.io/read-more/)**.
+
 ## Setup
 
 ### Html
