@@ -2,7 +2,7 @@
 This plugin provides reveal/hide content with simple slide animation.
 
 ## Demo
-See **[demo](http://http://primemodule.github.io/read-more/)**.
+See **[demo](http://www.primemodule.github.io/read-more/)**.
 
 ## Setup
 
