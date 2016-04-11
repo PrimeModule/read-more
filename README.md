@@ -9,7 +9,7 @@ See **[demo](http://primemodule.github.io/read-more/)**.
 ### Html
 ```html
 <div class="read-more js-read-more">
-  <a href="#" class="read-more__trigger js-read-more-trigger>Read more</a>
+  <a href="#" class="read-more__trigger js-read-more-trigger">Read more</a>
   <div class="read-more__content js-read-more-content">
     ...content...
   </div>
@@ -22,7 +22,7 @@ $('.js-read-more').readMore();
 ```
 
 ## Requirements
-Read-more plugin is written in jQuery(version 1.12+)
+Read-more plugin is written in jQuery
 
 ## License
 Read-more plugin is released under an MIT License.
