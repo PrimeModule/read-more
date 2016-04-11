@@ -60,7 +60,7 @@
         <div class="preview-box">
           <h4 class="preview-box__title text-highlight">HTML</h3>
           <pre class="preview-box__code">&lt;div class="read-more js-read-more"&gt;
-  &lt;a href="#" class="read-more__trigger js-read-more-trigger>Read more&lt;/a&gt;
+  &lt;a href="#" class="read-more__trigger js-read-more-trigger">Read more&lt;/a&gt;
   &lt;div class="read-more__content js-read-more-content"&gt;
     ...content...
   &lt;/div&gt;
@@ -76,9 +76,9 @@
         <h3 class="section__title ">Demo</h3>
         <p class="section__description">Simple example of read-more plugin usage. Click the trigger to toggle content.</p>
         <!-- BEGIN READ-MORE HTML -->
-        <div class="read-more js-read-more">
-          <a href="#" class="read-more__trigger common-link text-highlight js-read-more-trigger">Read more</a>
-          <div class="read-more__content js-read-more-content">
+        <div class="js-read-more">
+          <a href="#" class="common-link text-highlight js-read-more-trigger">Read more</a>
+          <div class="js-read-more-content" hidden>
             Nulla convallis fringilla mi, eu pretium dui dapibus vel. Cras at odio nibh. Fusce eget metus justo. Pellentesque non quam massa. Cras placerat cursus accumsan. Maecenas hendrerit nibh enim, ac dapibus felis facilisis eu. Curabitur sollicitudin purus in ultrices rutrum. Donec non sem volutpat, eleifend lorem non, egestas ante. Proin varius lorem mauris, id aliquet velit eleifend at. Suspendisse quis mi id ante aliquam sodales id sed diam. Suspendisse suscipit dolor sed ipsum suscipit sodales. Pellentesque vitae odio dapibus, malesuada massa at, luctus risus. Suspendisse maximus sodales turpis vehicula pulvinar. Pellentesque pretium mollis magna, ut rhoncus leo hendrerit quis.
           </div>
         </div>
@@ -127,7 +127,7 @@
 
     <!-- START READ-MORE JS -->
     <script type="text/javascript">
-      $('.js-read-more').readMore();
+      $('.js-read-more-content').readMore();
     </script>
     <!-- END READ-MORE JS -->
   </body>
