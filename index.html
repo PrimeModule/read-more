@@ -57,37 +57,90 @@
       <section id="setup" class="section">
         <h3 class="section__title ">Setup</h3>
         <p class="section__description">Minimum use of javascript and flat structure make it easy to setup.</p>
-        <div class="preview-box">
-          <h4 class="preview-box__title text-highlight">HTML</h3>
-          <pre class="preview-box__code">&lt;div class="read-more js-read-more"&gt;
-  &lt;a href="#" class="read-more__trigger js-read-more-trigger">Read more&lt;/a&gt;
-  &lt;div class="read-more__content js-read-more-content"&gt;
+        <div class="preview-box margin-bottom-40">
+          <h4 class="preview-box__title">Basic usage:</h4>
+          <h4 class="preview-box__title text-highlight">JavaScript</h4>
+          <pre class="preview-box__code">$(.js-read-more-content).readMore();</pre>
+          <h4 class="preview-box__title text-highlight">HTML</h4>
+          <pre class="preview-box__code">&lt;div class="js-read-more"&gt;
+  &lt;a href="#" class="js-read-more-trigger">Read more&lt;/a&gt;
+  &lt;div class="js-read-more-content" hidden&gt;
     ...content...
   &lt;/div&gt;
 &lt;/div&gt;</pre>
         </div>
-        <div class="preview-box">
-          <h4 class="preview-box__title text-highlight">JavaScript</h3>
-          <pre class="preview-box__code">$(.js-read-more).readMore();</pre>
+
+        <div class="preview-box margin-bottom-40">
+          <h4 class="preview-box__title">Advanced usage:</h4>
+          <h4 class="preview-box__title"><span class="text-highlight">HTML</span> - Trigger as anchor with content id in href</h4>
+          <pre class="preview-box__code">&lt;div&gt;
+  &lt;a href="#example_id_1" class="js-read-more-trigger"&gt;Read more&lt;/a&gt;
+&lt;/div&gt;
+...
+&lt;div&gt;
+  &lt;div id="example_id_1" class="js-read-more-content"&gt;
+    ...content...
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+        <div class="preview-box margin-bottom-40">
+          <h4 class="preview-box__title"><span class="text-highlight">HTML</span> - Trigger as button with content id in data-rm-link attribute</h4>
+          <pre class="preview-box__code">&lt;div&gt;
+  &lt;button data-rm-link="#example_id_1" class="js-read-more-trigger"&gt;Read more&lt;/button&gt;
+&lt;/div&gt;
+...
+&lt;div&gt;
+  &lt;div id="example_id_1" class="js-read-more-content"&gt;
+    ...content...
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+        <div class="preview-box margin-bottom-40">
+          <h4 class="preview-box__title"><span class="text-highlight">HTML</span> - Trigger with specified action: toggle(default), open, close in data-rm-action attribute.</h4>
+          <pre class="preview-box__code">&lt;div&gt;
+  &lt;button data-rm-link="#example_id_1" data-rm-action="open" class="js-read-more-trigger"&gt;Open&lt;/button&gt;
+&lt;/div&gt;
+...
+&lt;div&gt;
+  &lt;div id="example_id_1" class="js-read-more-content"&gt;
+    ...content...
+    &lt;button data-rm-link="#example_id_1" data-rm-action="close" class="js-read-more-trigger"&gt;Close&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
         </div>
       </section>
 
       <section id="demo" class="section section--decorated">
         <h3 class="section__title ">Demo</h3>
-        <p class="section__description">Simple example of read-more plugin usage. Click the trigger to toggle content.</p>
-        <!-- BEGIN READ-MORE HTML -->
-        <div class="js-read-more">
-          <a href="#" class="common-link text-highlight js-read-more-trigger">Read more</a>
-          <div class="js-read-more-content" hidden>
-            Nulla convallis fringilla mi, eu pretium dui dapibus vel. Cras at odio nibh. Fusce eget metus justo. Pellentesque non quam massa. Cras placerat cursus accumsan. Maecenas hendrerit nibh enim, ac dapibus felis facilisis eu. Curabitur sollicitudin purus in ultrices rutrum. Donec non sem volutpat, eleifend lorem non, egestas ante. Proin varius lorem mauris, id aliquet velit eleifend at. Suspendisse quis mi id ante aliquam sodales id sed diam. Suspendisse suscipit dolor sed ipsum suscipit sodales. Pellentesque vitae odio dapibus, malesuada massa at, luctus risus. Suspendisse maximus sodales turpis vehicula pulvinar. Pellentesque pretium mollis magna, ut rhoncus leo hendrerit quis.
+        <div class="preview-box margin-bottom-40">
+          <h4 class="preview-box__title">Basic example:</h4>
+          <div class="js-read-more">
+            <a href="#" class="common-link text-highlight js-read-more-trigger">Read more</a>
+            <div class="js-read-more-content">
+              Nulla convallis fringilla mi, eu pretium dui dapibus vel. Cras at odio nibh. Fusce eget metus justo. Pellentesque non quam massa. Cras placerat cursus accumsan. Maecenas hendrerit nibh enim, ac dapibus felis facilisis eu. Curabitur sollicitudin purus in ultrices rutrum. Donec non sem volutpat, eleifend lorem non, egestas ante. Proin varius lorem mauris, id aliquet velit eleifend at. Suspendisse quis mi id ante aliquam sodales id sed diam. Suspendisse suscipit dolor sed ipsum suscipit sodales. Pellentesque vitae odio dapibus, malesuada massa at, luctus risus. Suspendisse maximus sodales turpis vehicula pulvinar. Pellentesque pretium mollis magna, ut rhoncus leo hendrerit quis.
+            </div>
           </div>
         </div>
-        <!-- END READ-MORE HTML -->
+
+        <div class="preview-box">
+          <h4 class="preview-box__title">Advanced example:</h4>
+          <div class="margin-bottom-40">
+            <button data-rm-link="#just_an_example" class="js-read-more-trigger">Toggle</button>
+            <button data-rm-link="#just_an_example" data-rm-action="open" class="js-read-more-trigger">Open</button>
+            <button data-rm-link="#just_an_example" data-rm-action="close" class="js-read-more-trigger">Close</button>
+          </div>
+
+          <div id="just_an_example" class="js-read-more-content">
+            Nulla convallis fringilla mi, eu pretium dui dapibus vel. Cras at odio nibh. Fusce eget metus justo. Pellentesque non quam massa. Cras placerat cursus accumsan. Maecenas hendrerit nibh enim, ac dapibus felis facilisis eu. Curabitur sollicitudin purus in ultrices rutrum. Donec non sem volutpat, eleifend lorem non, egestas ante. Proin varius lorem mauris, id aliquet velit eleifend at. Suspendisse quis mi id ante aliquam sodales id sed diam. Suspendisse suscipit dolor sed ipsum suscipit sodales. Pellentesque vitae odio dapibus, malesuada massa at, luctus risus. Suspendisse maximus sodales turpis vehicula pulvinar. Pellentesque pretium mollis magna, ut rhoncus leo hendrerit quis. <a href="#just_an_example" data-rm-action="close" class="common-link text-highlight js-read-more-trigger">Close</a>
+          </div>
+        </div>
       </section>
 
       <section id="requirements" class="section section--decorated">
         <h3 class="section__title ">Requirements</h3>
-        <p class="section__description">Read-more plugin is written with jQuery use. Please download and attach jQuery library before using this plugin.<br /> Version 1.12 required or above. Visit jQuery official <a href="https://jquery.com/" target="_blank" class="common-link text-highlight">website</a>.</p>
+        <p class="section__description">Read-more plugin is written with <a href="https://jquery.com/" target="_blank" class="common-link text-highlight">jQuery</a> use.</p>
       </section>
 
       <section id="license" class="section section--decorated">

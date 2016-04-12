@@ -29,6 +29,8 @@
   ReadMore.prototype.setup = function() {
     var $parentRoot, $inlineTriggers;
 
+    this.$root.hide(); // Hide content
+
     $parentRoot = this.$root.parent('.js-read-more');
     $parentRoot = $parentRoot.length > 0 ? $parentRoot : null;
 
@@ -86,7 +88,7 @@
     /**
      * @type {Array.<HTMLElement>}
      */
-    var $triggers = $(document).find('.js-read-more-trigger');
+    var $triggers = $('.js-read-more-trigger');
 
     /**
      * @type {Array.<HTMLElement>}
